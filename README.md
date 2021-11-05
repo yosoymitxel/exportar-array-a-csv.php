@@ -1,6 +1,8 @@
 # Exportar Array a CSV
 
-# Cómo usar
+Librería pequeña para exportar array a csv con PHP.
+
+## Cómo usar
 
 Hay dos variantes de uso, uno para guardar, en donde se le especifica en qué carpeta quedará el archivo:
 
