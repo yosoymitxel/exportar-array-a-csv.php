@@ -2,7 +2,7 @@
 
 function exportar_array_csv_guardar_csv($fileName,$array,$filePath){
     $result  = false;
-    $headers = array_keys($array[0]) : false;
+    $headers = array_keys($array[0]);
 
     if (is_array($array)){
         //Crear archivo CSV
@@ -33,7 +33,7 @@ function exportar_array_csv_guardar_csv($fileName,$array,$filePath){
 
 function exportar_array_csv_descargar_csv($fileName,$array,$delimiter = ";"){
     $fd      = fopen('php://output', 'w');
-    $headers = array_keys($array[0]) : false;
+    $headers = array_keys($array[0]);
   
     if ($fd === false) {
         die("No se ha podido crear el archivo en el servidor. Revise los permisos en la carpeta.");
